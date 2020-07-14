@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Котейка</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body class="body">
+    <div class="tooltip" role="tooltip">
+      <div class="tooltip__arrow" data-popper-arrow="true"></div>
+    </div>
+    <div class="modal modal_view_big-paw" id="booking">
+      <div class="modal__window">
+        <div class="modal__title">
+          <button class="modal__close-btn" type="button" data-dismiss="modal"></button>
+        </div>
+        <div class="modal__body">
+          <form class="booking-form" action="javascript:void(0)">
+            <div class="booking-form__title">Забронировать номер</div>
+            <div class="input-group">
+              <input class="input-group__input" type="text" name="your-name">
+              <label class="input-group__label">Ваше имя</label>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input" type="text" name="pet-name">
+              <label class="input-group__label">Имя Питомца</label>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input" type="tel" name="tel" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+              <label class="input-group__label">Телефон</label>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input" type="email" name="email">
+              <label class="input-group__label">E-mail</label>
+            </div>
+            <div class="date-range">
+              <div class="date-range__title">Дата заезда</div>
+              <label class="date-range__label-from">с</label>
+              <input class="date-range__input-from" type="date" name="date-from">
+              <label class="date-range__label-to">по</label>
+              <input class="date-range__input-to" type="date" name="date-to">
+            </div>
+            <button class="send-button" data-target="thanks" data-toggle="modal">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_view_small-paw" id="thanks">
+      <div class="modal__window">
+        <div class="modal__title">
+          <button class="modal__close-btn" type="button" data-dismiss="modal"></button>
+        </div>
+        <div class="modal__body">
+          <div class="response">
+            <div class="response__title">Спасибо за заявку!</div>
+            <div class="response__text">Мы свяжемся с вами в ближайшее время</div>
+            <button class="ok-button" data-dismiss="modal">Ок</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_view_smart" id="burger-menu">
+      <div class="modal__window">
+        <div class="modal__title">
+          <button class="modal__close-btn" type="button" data-dismiss="modal"></button>
+        </div>
+        <div class="modal__body">
+          <div class="burger-menu">
+            <div class="logo"><a href="/"><img src="/img/logo.svg" alt="Котейка"></a></div>
+            <ul class="burger-menu__list">
+              <li class="burger-menu__item"><a class="burger-menu__link" href="/#advantages" data-dismiss="modal">Почему мы?</a></li>
+              <li class="burger-menu__item"><a class="burger-menu__link" href="/#rooms" data-dismiss="modal">Номера</a></li>
+              <li class="burger-menu__item"><a class="burger-menu__link" href="/#reviews" data-dismiss="modal">Отзывы</a></li>
+              <li class="burger-menu__item"><a class="burger-menu__link" href="/#contacts" data-dismiss="modal">Контакты</a></li>
+            </ul><a class="burger-menu__phone" type="tel" href="tel:88003335599">8 (800) 333-55-99</a>
+            <ul class="social-icons">
+              <li class="social-icons__item"><a class="social-icons__link" href="https://fb.com"></a><img src="/img/sprites/sprite-social.svg#fb" alt="fb"></li>
+              <li class="social-icons__item"><a class="social-icons__link" href="https://ig.com"></a><img src="/img/sprites/sprite-social.svg#ig" alt="ig"></li>
+              <li class="social-icons__item"><a class="social-icons__link" href="https://vk.com"></a><img src="/img/sprites/sprite-social.svg#vk" alt="vk"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_view_filter" id="filter">
+      <div class="modal__window">
+        <div class="modal__title">
+          <button class="modal__close-btn" type="button" data-dismiss="modal"></button>
+        </div>
+        <div class="modal__body">
+          <div class="filter">
+            <div class="text-range text-range_view_catalog" data-tooltip-title="Цена за сутки">
+              <div class="text-range__title">Цена за сутки,  &#8381;</div>
+              <div class="text-range__inner">
+                <label class="field-text"><span class="field-text__name">от</span><span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text"/></span>
+                </label>
+                <label class="field-text"><span class="field-text__name">до</span><span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text"/></span>
+                </label>
+              </div>
+            </div>
+            <div class="field-checkbox field-checkbox_view_catalog">
+              <div class="field-checkbox__title">Площадь</div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check1" checked="checked"/><span class="field-checkbox__name-text">0.63 м2</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check2" checked="checked"/><span class="field-checkbox__name-text">0,90 м2</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check3" checked="checked"/><span class="field-checkbox__name-text">1.13 м2</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check4" checked="checked"/><span class="field-checkbox__name-text">1,56 м2</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check5" checked="checked"/><span class="field-checkbox__name-text">2,56 м2</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check6" checked="checked"/><span class="field-checkbox__name-text">2,88 м2</span>
+                </label>
+              </div>
+            </div>
+            <div class="field-checkbox field-checkbox_view_catalog">
+              <div class="field-checkbox__title">Оснащение номера</div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check7" checked="checked"/><span class="field-checkbox__name-text">Пустой номер</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check8" checked="checked"/><span class="field-checkbox__name-text">Лежак</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check9" checked="checked"/><span class="field-checkbox__name-text">Когтеточка</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check10" checked="checked"/><span class="field-checkbox__name-text">Игровой комплекс</span>
+                </label>
+              </div>
+              <div class="field-checkbox__input-wrap">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="check11" checked="checked"/><span class="field-checkbox__name-text">Домик</span>
+                </label>
+              </div>
+            </div>
+            <button class="filter-button filter-button_apply">Применить</button>
+            <button class="filter-button">Сбросить фильтр</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page page_view_index">
+      <header class="header">
+        <nav class="navbar header__navbar">
+          <div class="logo"><a href="/"><img src="/img/logo.svg" alt="Котейка"></a></div>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#advantages">Почему мы?</a></li>
+            <li class="menu__item"><a class="menu__link" href="#rooms">Номера</a></li>
+            <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contacts">Как нас найти</a></li>
+          </ul>
+          <button class="burger-button" type="button" data-toggle="modal" data-target="burger-menu"></button>
+        </nav>
+      </header>
+      <section class="company">
+        <div class="company__inner">
+          <div class="company__city">Санкт-Петербург</div>
+          <div class="company__title">Котейка</div>
+          <div class="company__subtitle">Уютная гостиница для котов и кошек</div>
+          <button class="booking-button booking-button_theme_light company__booking-button" data-toggle="modal" data-target="booking">Забронировать</button>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="advantages__title">Почему мы?
+        </div>
+        <div class="advantages__body">
+          <div class="advantage-card">
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#thermometer"/>
+            </div>
+            <div class="advantage-card__title">Комфортная температура</div>
+            <div class="advantage-card__text">Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.</div>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#videocamera"/>
+            </div>
+            <div class="advantage-card__title">Видеонаблюдение</div>
+            <div class="advantage-card__text">Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или компьютера.</div>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#taxi"/>
+            </div>
+            <div class="advantage-card__title">Услуги Зоотакси</div>
+            <div class="advantage-card__text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</div>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#bag"/>
+            </div>
+            <div class="advantage-card__title">Сбалансированное питание</div>
+            <div class="advantage-card__text">Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.</div>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#cat"/>
+            </div>
+            <div class="advantage-card__title">Ежедневные прогулки</div>
+            <div class="advantage-card__text">По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой территории.</div>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#hand"/>
+            </div>
+            <div class="advantage-card__title">Лучшие ветеринары</div>
+            <div class="advantage-card__text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</div>
+          </div>
+        </div>
+      </section>
+      <section class="rooms" id="rooms">
+        <div class="rooms__title"><a href="catalog.html">Номера</a></div>
+        <div class="rooms__slider">
+          <div class="slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card-brief">
+                    <div class="card-brief__photo"><a><img src="/img/room1.jpg"/></a>
+                    </div>
+                    <div class="card-brief__body"><a>
+                        <h2 class="card-brief__title">Эконом плюс</h2></a>
+                      <ul class="card-brief__list">
+                        <li class="card-brief__list-item">Площадь - 0,90 м2</li>
+                        <li class="card-brief__list-item">Размеры (ШхГхВ) - 90x100x180 см</li>
+                        <li class="card-brief__list-item">Цена за сутки: <span class="card__price">200 &#8381;</span></li>
+                      </ul>
+                      <button class="booking-button card__booking-button" data-toggle="modal" data-target="booking">Забронировать</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-brief">
+                    <div class="card-brief__photo"><a><img src="/img/room2.jpg"/></a>
+                    </div>
+                    <div class="card-brief__body"><a>
+                        <h2 class="card-brief__title">Комфорт</h2></a>
+                      <ul class="card-brief__list">
+                        <li class="card-brief__list-item">Площадь - 1,13 м2</li>
+                        <li class="card-brief__list-item">Размеры (ШхГхВ) - 100x125x180 см</li>
+                        <li class="card-brief__list-item">Цена за сутки: <span class="card__price">250 &#8381;</span></li>
+                      </ul>
+                      <button class="booking-button card__booking-button" data-toggle="modal" data-target="booking">Забронировать</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-brief">
+                    <div class="card-brief__photo"><a><img src="/img/room3.jpg"/></a>
+                    </div>
+                    <div class="card-brief__body"><a>
+                        <h2 class="card-brief__title">Сьют</h2></a>
+                      <ul class="card-brief__list">
+                        <li class="card-brief__list-item">Площадь - 1,56 м2</li>
+                        <li class="card-brief__list-item">Размеры (ШхГхВ) - 125x125x180 см</li>
+                        <li class="card-brief__list-item">Цена за сутки: <span class="card__price">350 &#8381;</span></li>
+                      </ul>
+                      <button class="booking-button card__booking-button" data-toggle="modal" data-target="booking">Забронировать</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-navigation">
+              <button class="swiper-button swiper-button-prev"></button>
+              <button class="swiper-button swiper-button-next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="reviews__title">Отзывы
+        </div>
+        <div class="reviews__slider">
+          <div class="slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__quote">"</div>
+                    <div class="review-card__text">Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</div>
+                    <div class="review-card__inner">
+                      <div class="review-card__customer">Валерия Гришаева</div>
+                      <div class="review-card__date">15 ноября, 2019</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__quote">"</div>
+                    <div class="review-card__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</div>
+                    <div class="review-card__inner">
+                      <div class="review-card__customer">Екатерина Минаева</div>
+                      <div class="review-card__date">10 октября, 2019</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__quote">"</div>
+                    <div class="review-card__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</div>
+                    <div class="review-card__inner">
+                      <div class="review-card__customer">Павел Нечаев</div>
+                      <div class="review-card__date">2 августа, 2019</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-navigation">
+              <button class="swiper-button swiper-button-prev"></button>
+              <button class="swiper-button swiper-button-next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts__address">
+          <div class="contacts__title">Как нас найти</div>
+          <dl>
+            <dt class="contacts__subtitle">Адрес</dt>
+            <dd class="contacts__text">Санкт-Петербург,<br> ул Большая Конюшенная, д 19</dd>
+            <dt class="contacts__subtitle">Режим работы</dt>
+            <dd class="contacts__text">Ежедневно, с 9:00 до 20:00</dd>
+            <dt class="contacts__subtitle">Телефон</dt>
+            <dd class="contacts__text"><a href="tel:88003335599">8 (800) 333-55-99</a></dd>
+            <dt class="contacts__subtitle">E-mail</dt>
+            <dd class="contacts__text"><a href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a></dd>
+            <dt class="contacts__subtitle">Социальные сети</dt>
+            <dd> 
+              <ul class="social-icons">
+                <li class="social-icons__item"><a class="social-icons__link" href="https://fb.com"></a><img src="/img/sprites/sprite-social.svg#fb" alt="fb"></li>
+                <li class="social-icons__item"><a class="social-icons__link" href="https://ig.com"></a><img src="/img/sprites/sprite-social.svg#ig" alt="ig"></li>
+                <li class="social-icons__item"><a class="social-icons__link" href="https://vk.com"></a><img src="/img/sprites/sprite-social.svg#vk" alt="vk"></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        <div class="contacts__map">
+          <picture>
+            <source srcset="/img/map-mobile.jpg" media="(min-width: 320px) and (max-width: 510px)">
+            <source srcset="/img/map-tablet.jpg" media="(max-width: 840px)">
+            <source srcset="/img/map.jpg" media="(max-width: 1366px)"><img src="/img/map.jpg" alt="map">
+          </picture>
+        </div>
+      </section>
+      <footer class="footer">
+        <nav class="navbar footer__navbar">
+          <div class="logo"><a href="/"><img src="/img/logo.svg" alt="Котейка"></a></div>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#advantages">Почему мы?</a></li>
+            <li class="menu__item"><a class="menu__link" href="#rooms">Номера</a></li>
+            <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contacts">Как нас найти</a></li>
+          </ul>
+        </nav>
+        <hr class="footer__line">
+        <div class="footer__legal-info">
+          <div class="footer__copyright">&copy; 2019 Все права защищены</div><a class="footer__privacy-policy" href="javascript:void(0)">Политика конфиденциальности</a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+  </body>
+</html>
