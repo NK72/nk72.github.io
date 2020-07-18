@@ -92,11 +92,11 @@
               <li class="burger-menu__item"><a class="burger-menu__link" href="/#rooms" data-dismiss="modal">Номера</a></li>
               <li class="burger-menu__item"><a class="burger-menu__link" href="/#reviews" data-dismiss="modal">Отзывы</a></li>
               <li class="burger-menu__item"><a class="burger-menu__link" href="/#contacts" data-dismiss="modal">Контакты</a></li>
-            </ul><a class="burger-menu__phone" type="tel" href="tel:88003335599">8 (800) 333-55-99</a>
+            </ul><a class="burger-menu__phone" href="tel:88003335599">8 (800) 333-55-99</a>
             <ul class="social-icons">
-              <li class="social-icons__item"><a class="social-icons__link" href="https://fb.com"></a><img src="/img/sprites/sprite-social.svg#fb" alt="fb"></li>
-              <li class="social-icons__item"><a class="social-icons__link" href="https://ig.com"></a><img src="/img/sprites/sprite-social.svg#ig" alt="ig"></li>
-              <li class="social-icons__item"><a class="social-icons__link" href="https://vk.com"></a><img src="/img/sprites/sprite-social.svg#vk" alt="vk"></li>
+              <li class="social-icons__item"><a class="social-icons__link" href="https://fb.com"></a><img src="/img/sprites/sprite-social.svg#fb" alt="fb" width="22" height="22" loading="lazy"></li>
+              <li class="social-icons__item"><a class="social-icons__link" href="https://instagram.com"></a><img src="/img/sprites/sprite-social.svg#ig" alt="ig" width="22" height="22" loading="lazy"></li>
+              <li class="social-icons__item"><a class="social-icons__link" href="https://vk.com"></a><img src="/img/sprites/sprite-social.svg#vk" alt="vk" width="22" height="22" loading="lazy"></li>
             </ul>
           </div>
         </div>
@@ -190,7 +190,7 @@
     <div class="page page_view_index">
       <header class="header">
         <nav class="navbar header__navbar">
-          <div class="logo"><a href="/"><img src="/img/logo.svg" alt="Котейка"></a></div>
+          <div class="logo"><a href="/"><img src="/img/logo.svg" alt="Котейка" width="63" height="52"></a></div>
           <ul class="menu">
             <li class="menu__item"><a class="menu__link" href="#advantages">Почему мы?</a></li>
             <li class="menu__item"><a class="menu__link" href="#rooms">Номера</a></li>
@@ -200,68 +200,69 @@
           <button class="burger-button" type="button" data-toggle="modal" data-target="burger-menu"></button>
         </nav>
       </header>
-      <section class="company">
-        <div class="company__inner">
-          <div class="company__city">Санкт-Петербург</div>
-          <div class="company__title">Котейка</div>
-          <div class="company__subtitle">Уютная гостиница для котов и кошек</div>
-          <button class="booking-button booking-button_theme_light company__booking-button" data-toggle="modal" data-target="booking">Забронировать</button>
+      <section class="promo">
+        <h1 class="visually-hidden">Гостиница для котов и кошек "Котейка"</h1>
+        <div class="promo__inner">
+          <p class="promo__city">Санкт-Петербург</p>
+          <p class="promo__title">Котейка</p>
+          <p class="promo__subtitle">Уютная гостиница для котов и кошек</p>
+          <button class="booking-button booking-button_theme_light promo__booking-button" data-toggle="modal" data-target="booking">Забронировать</button>
         </div>
       </section>
       <section class="advantages" id="advantages">
-        <div class="advantages__title">Почему мы?
-        </div>
+        <h2 class="advantages__title">Почему мы?
+        </h2>
         <div class="advantages__body">
           <div class="advantage-card">
-            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#thermometer"/>
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#thermometer" width="55" height="55" alt="Комфортная температура" loading="lazy"/>
             </div>
-            <div class="advantage-card__title">Комфортная температура</div>
-            <div class="advantage-card__text">Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.</div>
+            <h3 class="advantage-card__title">Комфортная температура</h3>
+            <p class="advantage-card__text">Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.</p>
           </div>
           <div class="advantage-card">
-            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#videocamera"/>
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#videocamera" width="55" height="55" alt="Видеонаблюдение" loading="lazy"/>
             </div>
-            <div class="advantage-card__title">Видеонаблюдение</div>
-            <div class="advantage-card__text">Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или компьютера.</div>
+            <h3 class="advantage-card__title">Видеонаблюдение</h3>
+            <p class="advantage-card__text">Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или компьютера.</p>
           </div>
           <div class="advantage-card">
-            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#taxi"/>
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#taxi" width="55" height="55" alt="Услуги Зоотакси" loading="lazy"/>
             </div>
-            <div class="advantage-card__title">Услуги Зоотакси</div>
-            <div class="advantage-card__text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</div>
+            <h3 class="advantage-card__title">Услуги Зоотакси</h3>
+            <p class="advantage-card__text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
           </div>
           <div class="advantage-card">
-            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#bag"/>
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#bag" width="55" height="55" alt="Сбалансированное питание" loading="lazy"/>
             </div>
-            <div class="advantage-card__title">Сбалансированное питание</div>
-            <div class="advantage-card__text">Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.</div>
+            <h3 class="advantage-card__title">Сбалансированное питание</h3>
+            <p class="advantage-card__text">Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.</p>
           </div>
           <div class="advantage-card">
-            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#cat"/>
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#cat" width="55" height="55" alt="Ежедневные прогулки" loading="lazy"/>
             </div>
-            <div class="advantage-card__title">Ежедневные прогулки</div>
-            <div class="advantage-card__text">По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой территории.</div>
+            <h3 class="advantage-card__title">Ежедневные прогулки</h3>
+            <p class="advantage-card__text">По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой территории.</p>
           </div>
           <div class="advantage-card">
-            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#hand"/>
+            <div class="advantage-card__icon"><img src="/img/sprites/sprite-advantages.svg#hand" width="55" height="55" alt="Лучшие ветеринары" loading="lazy"/>
             </div>
-            <div class="advantage-card__title">Лучшие ветеринары</div>
-            <div class="advantage-card__text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</div>
+            <h3 class="advantage-card__title">Лучшие ветеринары</h3>
+            <p class="advantage-card__text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
           </div>
         </div>
       </section>
       <section class="rooms" id="rooms">
-        <div class="rooms__title"><a href="catalog.html">Номера</a></div>
+        <h2 class="rooms__title"><a href="catalog.html">Номера</a></h2>
         <div class="rooms__slider">
           <div class="slider">
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="card-brief">
-                    <div class="card-brief__photo"><a><img src="/img/room1.jpg"/></a>
+                    <div class="card-brief__photo"><a><img src="/img/room1.jpg" width="600" height="404" alt="номер &quot;Эконом плюс&quot;" loading="lazy"/></a>
                     </div>
                     <div class="card-brief__body"><a>
-                        <h2 class="card-brief__title">Эконом плюс</h2></a>
+                        <h3 class="card-brief__title">Эконом плюс</h3></a>
                       <ul class="card-brief__list">
                         <li class="card-brief__list-item">Площадь - 0,90 м2</li>
                         <li class="card-brief__list-item">Размеры (ШхГхВ) - 90x100x180 см</li>
@@ -273,10 +274,10 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card-brief">
-                    <div class="card-brief__photo"><a><img src="/img/room2.jpg"/></a>
+                    <div class="card-brief__photo"><a><img src="/img/room2.jpg" width="600" height="404" alt="номер &quot;Комфорт&quot;" loading="lazy"/></a>
                     </div>
                     <div class="card-brief__body"><a>
-                        <h2 class="card-brief__title">Комфорт</h2></a>
+                        <h3 class="card-brief__title">Комфорт</h3></a>
                       <ul class="card-brief__list">
                         <li class="card-brief__list-item">Площадь - 1,13 м2</li>
                         <li class="card-brief__list-item">Размеры (ШхГхВ) - 100x125x180 см</li>
@@ -288,10 +289,10 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card-brief">
-                    <div class="card-brief__photo"><a><img src="/img/room3.jpg"/></a>
+                    <div class="card-brief__photo"><a><img src="/img/room3.jpg" width="600" height="404" alt="номер &quot;Сьют&quot;" loading="lazy"/></a>
                     </div>
                     <div class="card-brief__body"><a>
-                        <h2 class="card-brief__title">Сьют</h2></a>
+                        <h3 class="card-brief__title">Сьют</h3></a>
                       <ul class="card-brief__list">
                         <li class="card-brief__list-item">Площадь - 1,56 м2</li>
                         <li class="card-brief__list-item">Размеры (ШхГхВ) - 125x125x180 см</li>
@@ -312,39 +313,39 @@
         </div>
       </section>
       <section class="reviews" id="reviews">
-        <div class="reviews__title">Отзывы
-        </div>
+        <h2 class="reviews__title">Отзывы
+        </h2>
         <div class="reviews__slider">
           <div class="slider">
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="review-card">
-                    <div class="review-card__quote">"</div>
-                    <div class="review-card__text">Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</div>
+                    <p class="review-card__quote">"</p>
+                    <p class="review-card__text">Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</p>
                     <div class="review-card__inner">
-                      <div class="review-card__customer">Валерия Гришаева</div>
-                      <div class="review-card__date">15 ноября, 2019</div>
+                      <p class="review-card__customer">Валерия Гришаева</p>
+                      <p class="review-card__date">15 ноября, 2019</p>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="review-card">
-                    <div class="review-card__quote">"</div>
-                    <div class="review-card__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</div>
+                    <p class="review-card__quote">"</p>
+                    <p class="review-card__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
                     <div class="review-card__inner">
-                      <div class="review-card__customer">Екатерина Минаева</div>
-                      <div class="review-card__date">10 октября, 2019</div>
+                      <p class="review-card__customer">Екатерина Минаева</p>
+                      <p class="review-card__date">10 октября, 2019</p>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="review-card">
-                    <div class="review-card__quote">"</div>
-                    <div class="review-card__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</div>
+                    <p class="review-card__quote">"</p>
+                    <p class="review-card__text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
                     <div class="review-card__inner">
-                      <div class="review-card__customer">Павел Нечаев</div>
-                      <div class="review-card__date">2 августа, 2019</div>
+                      <p class="review-card__customer">Павел Нечаев</p>
+                      <p class="review-card__date">2 августа, 2019</p>
                     </div>
                   </div>
                 </div>
@@ -360,7 +361,7 @@
       </section>
       <section class="contacts" id="contacts">
         <div class="contacts__address">
-          <div class="contacts__title">Как нас найти</div>
+          <h2 class="contacts__title">Как нас найти</h2>
           <dl>
             <dt class="contacts__subtitle">Адрес</dt>
             <dd class="contacts__text">Санкт-Петербург,<br> ул Большая Конюшенная, д 19</dd>
@@ -373,24 +374,24 @@
             <dt class="contacts__subtitle">Социальные сети</dt>
             <dd> 
               <ul class="social-icons">
-                <li class="social-icons__item"><a class="social-icons__link" href="https://fb.com"></a><img src="/img/sprites/sprite-social.svg#fb" alt="fb"></li>
-                <li class="social-icons__item"><a class="social-icons__link" href="https://ig.com"></a><img src="/img/sprites/sprite-social.svg#ig" alt="ig"></li>
-                <li class="social-icons__item"><a class="social-icons__link" href="https://vk.com"></a><img src="/img/sprites/sprite-social.svg#vk" alt="vk"></li>
+                <li class="social-icons__item"><a class="social-icons__link" href="https://fb.com"></a><img src="/img/sprites/sprite-social.svg#fb" alt="fb" width="22" height="22" loading="lazy"></li>
+                <li class="social-icons__item"><a class="social-icons__link" href="https://instagram.com"></a><img src="/img/sprites/sprite-social.svg#ig" alt="ig" width="22" height="22" loading="lazy"></li>
+                <li class="social-icons__item"><a class="social-icons__link" href="https://vk.com"></a><img src="/img/sprites/sprite-social.svg#vk" alt="vk" width="22" height="22" loading="lazy"></li>
               </ul>
             </dd>
           </dl>
         </div>
         <div class="contacts__map">
           <picture>
-            <source srcset="/img/map-mobile.jpg" media="(min-width: 320px) and (max-width: 510px)">
-            <source srcset="/img/map-tablet.jpg" media="(max-width: 840px)">
-            <source srcset="/img/map.jpg" media="(max-width: 1366px)"><img src="/img/map.jpg" alt="map">
+            <source srcset="/img/map-mobile.jpg" media="(min-width: 320px) and (max-width: 510px)" alt="Карта" width="320" height="300" loading="lazy">
+            <source srcset="/img/map-tablet.jpg" media="(max-width: 840px)" alt="Карта" width="399" height="522" loading="lazy">
+            <source srcset="/img/map.jpg" media="(max-width: 1366px)" alt="Карта" width="798" height="580" loading="lazy"><img src="/img/map.jpg" alt="Карта" width="798" height="580" loading="lazy">
           </picture>
         </div>
       </section>
       <footer class="footer">
         <nav class="navbar footer__navbar">
-          <div class="logo"><a href="/"><img src="/img/logo.svg" alt="Котейка"></a></div>
+          <div class="logo"><a href="/"><img src="/img/logo.svg" alt="Котейка" width="63" height="52"></a></div>
           <ul class="menu">
             <li class="menu__item"><a class="menu__link" href="#advantages">Почему мы?</a></li>
             <li class="menu__item"><a class="menu__link" href="#rooms">Номера</a></li>
@@ -400,7 +401,8 @@
         </nav>
         <hr class="footer__line">
         <div class="footer__legal-info">
-          <div class="footer__copyright">&copy; 2019 Все права защищены</div><a class="footer__privacy-policy" href="javascript:void(0)">Политика конфиденциальности</a>
+          <p class="footer__copyright">&copy; 2019 Все права защищены</p>
+          <p><a class="footer__privacy-policy" href="javascript:void(0)">Политика конфиденциальности</a></p>
         </div>
       </footer>
     </div>
